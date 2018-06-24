@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reccomendation Site for Lunch/Dinner</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.svg">
+    <link rel="stylesheet" type="text/css" href="fonts/css/font-awesome.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button1").click(function(){
+                alert("You just make a review!!!");
+            });
+        });
+        $(function() {
+            $("button1").click(function(){
+                $(this).css('background', 'gold');
+
+            });
+        });
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <ul class="nav navbar-nav " style="margin-left: 30px;">
+            <li><a href="RecommendationSite.html"><b>Home</b></a></li>
+            <li><a href="About.html"><b>About</b></a></li>
+            <li><a href="Contact.html"><b>Contact</b></a></li>
+        </ul>
+    </div>
+</nav>
+<div id="header" class="page-header">
+    <img id="logo" src="img/food_drink.png">
+     <button1 id="reviewStar" class="btn btn-default btn-lg"><b>Reviews</b>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+    </button1>
+</div>
+<section>
+    <div id= "jumbo" class="jumbotron">
+        <h1 class="text-center text-muted"> Find the place you are looking for. <br>
+            Plenty places to visit!
+        </h1>
+        <br>
+        <div class="text-center form-inline">
+            <div class="form-group">
+                <input type="text" id="city" placeholder="Search for restaurant" class="form-control">
+            </div>
+            <div class="form-group">
+                <button onclick="window.location = 'Contact.html'" id="button" class="btn btn-default; fa fa-search"><b> Search </b></button>
+            </div>
+            <br>
+            <!--<div id="error" class="text-danger alert alert-danger"></div>-->
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container" style="padding: 20px;">
+        <h1 class="text-center text-muted"> Latest offers </h1>
+        <hr style="width: 150px;">
+        <div class="row">
+        <div class="MultiCarousel" data-items="1,3,5,6" data-slide="4" id="MultiCarousel"  data-interval="1000">
+            <div class="MultiCarousel-inner">
+                <div class="item" style="padding: 2px;">
+                    <a href="#" class="thumbnail"><img src="img/distrikt_bar.jpg" alt="" id="prva"/></a>
+                    <h2>Distrikt Bar & Kitchen </h2>
+                    <p>Distrikt Bar & Kitchen will offer you out of ordinary dining experience with its open kitchen design, delicious menu and friendly service. All generation's place.</p>
+                    <span class="btn btn-info buttons" id="eden" style="margin-top:2px;">More</span>
+
+                    <div id="myModal1" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Distrikt Bar & Kitchen</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p> <b> Детали</b><br>
+                                    <b> Адреса:</b> Плоштад Македонија 7, Скопје<br>
+                                    <b> Места за седење (внатре): </b> 100<br>
+                                    <b> Места за седење (надвор):</b> 50<br>
+                                    <b> Паркинг:</b> 0<br>
+                                    <b> Картички:</b>  Credit cards <br>
+                                    <b> Домашни миленици:</b> Да<br>
+                                    <b> Пристапно:</b> Да<br>
+                                    <b> Бесплатно Wifi:</b> Да<br>
+                                    <b> Јазици:</b> Англиски<br>
+                                    <b> Музика:</b> Jazz, Techno, Pop<br>
+                                    <b> Отворен на:</b> 5.7.2013<br>
+                                    <b> Посети:</b> 24655<br>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <h3><span class="fa fa-check"></span></h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="item" style="padding: 2px;">
+                    <a href="#" class="thumbnail"><img src="img/trend-lounge.jpg" alt="" id="vtora"/></a>
+                    <h2 style="font-size:26px;">Lounge Restaurant Trend </h2>
+                    <p>Perfect location combinated with excellent food and wine is description for this place. Trend is a synonym for success in hospitality with a long tradition.</p>
+                    <span class="btn btn-info buttons" id="dva" style="margin-top:2px;">More</span>
+
+                    <div id="myModal2" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Lounge Restaurant Trend</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p> <b> Детали</b><br>
+                                    <b> Адреса:</b> Никола Вапцаров 2, Скопје<br>
+                                    <b> Места за седење (внатре): </b> 50<br>
+                                    <b> Места за седење (надвор):</b> 30<br>
+                                    <b> Паркинг:</b> 10<br>
+                                    <b> Картички:</b>  Credit cards <br>
+                                    <b> Домашни миленици:</b> Не<br>
+                                    <b> Пристапно:</b> Да<br>
+                                    <b> Бесплатно Wifi:</b> Да<br>
+                                    <b> Јазици:</b> Англиски<br>
+                                    <b> Музика:</b> Lounge, Pop<br>
+                                    <b> Отворен на:</b> 1.9.2017<br>
+                                    <b> Посети:</b> 9862<br>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <h3><span class="fa fa-check"></span></h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="item" style="padding: 2px;">
+                    <a href="#" class="thumbnail"><img src="img/pelister.jpg" alt="" id="treta"/></a>
+                    <h2>Pelister</h2>
+                    <p>Pelister is a place where people of different ages and professions come have meetings or just have a conversation, whether it would be time for coffee, lunch or dessert. </p>
+                    <span class="btn btn-info buttons" id="tri" style="margin-top: 34px;">More</span>
+
+                    <div id="myModal3" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Pelister</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p> <b> Детали</b><br>
+                                    <b> Адреса:</b> Плоштад Македонија, Скопје<br>
+                                    <b> Места за седење (внатре): </b> 90<br>
+                                    <b> Места за седење (надвор):</b> 20<br>
+                                    <b> Паркинг:</b> 0<br>
+                                    <b> Картички:</b>  Credit cards <br>
+                                    <b> Домашни миленици:</b> Не<br>
+                                    <b> Пристапно:</b> Да<br>
+                                    <b> Бесплатно Wifi:</b> Да<br>
+                                    <b> Јазици:</b> Англиски<br>
+                                    <b> Музика:</b> Bosanova, Smooth jazz, Lounge<br>
+                                    <b> Отворен на:</b> 01.01.2010<br>
+                                    <b> Посети:</b> 35689<br>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <h3><span class="fa fa-check"></span></h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="item" style="padding: 2px;">
+                    <a href="#" class="thumbnail"><img src="img/ciflik%20winery.jpg" alt="" id="cetvrta"/></a>
+                    <h2>Ciflik Winery</h2>
+                    <p>Ciflik Winery specialize in contemporary wine style making, by blending traditional recipes kept and nurtured in the family for more than 100 years with new state-of-the art wine to get the most extraordinary wine tastes.  </p>
+                    <span class="btn btn-info buttons" id="cetiri" style="margin-top: -7px;">More</span>
+
+                    <div id="myModal4" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Ciflik Winery</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p> <b> Детали</b><br>
+                                    <b> Адреса:</b> Брусник 2, Битола<br>
+                                    <b> Места за седење (внатре): </b> 130<br>
+                                    <b> Места за седење (надвор):</b> 20<br>
+                                    <b> Паркинг:</b> 120<br>
+                                    <b> Картички:</b>  Credit cards <br>
+                                    <b> Домашни миленици:</b> Не<br>
+                                    <b> Пристапно:</b> Да<br>
+                                    <b> Бесплатно Wifi:</b> Да<br>
+                                    <b> Јазици:</b> Англиски, Грчки<br>
+                                    <b> Музика:</b> Pop, Rock<br>
+                                    <b> Отворен на:</b> 2.1.2018<br>
+                                    <b> Посети:</b> 5695<br>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <h3><span class="fa fa-check"></span></h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="item" style="padding: 2px;">
+                    <a href="#" class="thumbnail"><img src="img/atva%20residence%20hotel.jpg" id="petta"/></a>
+                    <h2 style="font-size:26px;">Atva Residence Hotel</h2>
+                    <p>Experience the beautiful symphony of modernity and tradition at Atva Residence Hotel. Indulge in the breathtaking beauty of this paradise,in the slopes of the river Studencica. </p>
+                    <span class="btn btn-info buttons" id="pet" style="margin-top:10px;">More</span>
+
+                    <div id="myModal5" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Atva Residence Hotel</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p> <b> Детали</b><br>
+                                    <b> Адреса:</b> Добреноец 6250, Кичево<br>
+                                    <b> Места за седење (внатре): </b> 300<br>
+                                    <b> Места за седење (надвор):</b> 50<br>
+                                    <b> Паркинг:</b> 140<br>
+                                    <b> Картички:</b>  Credit cards <br>
+                                    <b> Домашни миленици:</b> Не<br>
+                                    <b> Пристапно:</b> Да<br>
+                                    <b> Бесплатно Wifi:</b> Да<br>
+                                    <b> Јазици:</b> Англиски, Албански<br>
+                                    <b> Музика:</b> Lounge, Folk<br>
+                                    <b> Отворен на:</b> 1.7.2005<br>
+                                    <b> Посети:</b> 54627<br>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <h3><span class="fa fa-check"></span></h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="item" style="padding: 2px;">
+                    <a href="#" class="thumbnail"><img src="img/noa%20lounge&bar.jpg" id="sesta"/></a>
+                    <h2>NOA Lounge & Bar</h2>
+                    <p>NOA is the only place for anyone who wants to enjoy relaxing, warm atmosphere, variety of delicious food and a glass of good Macedonian wine!</p>
+                    <span class="btn btn-info buttons" id="shest" style="margin-top:20px;">More</span>
+
+                    <div id="myModal6" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>NOA Lounge & Bar</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p> <b> Детали</b><br>
+                                    <b> Адреса:</b> Коста Абраш 38, Охрид<br>
+                                    <b> Места за седење (внатре): </b> 50<br>
+                                    <b> Места за седење (надвор):</b> 50<br>
+                                    <b> Паркинг:</b> 0<br>
+                                    <b> Картички:</b>  Credit cards <br>
+                                    <b> Домашни миленици:</b> Да<br>
+                                    <b> Пристапно:</b> Да<br>
+                                    <b> Бесплатно Wifi:</b> Да<br>
+                                    <b> Јазици:</b> Англиски, Француски, Германски<br>
+                                    <b> Музика:</b> Bosanova, Smooth jazz, Lounge<br>
+                                    <b> Отворен на:</b> 21.10.2011<br>
+                                    <b> Посети:</b> 29687<br>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <h3><span class="fa fa-check"></span></h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="item" style="padding: 2px;">
+                    <a href="#" class="thumbnail"><img src="img/veneto.jpg" id="sedma"/></a>
+                    <h2>Veneto Italian Restaurant</h2>
+                    <p>Veneto is the only place for anyone who wants to enjoy relaxing, warm atmosphere, variety of delicious food and a glass of good Macedonian wine!</p>
+                    <span class="btn btn-info buttons" id="sedum" style="margin-top:20px;">More</span>
+
+                    <div id="myModal7" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Veneto Italian Restaurant</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p> <b> Детали</b><br>
+                                    <b> Адреса:</b> Љубљанска 4, Скопје<br>
+                                    <b> Места за седење (внатре): </b> 60<br>
+                                    <b> Места за седење (надвор):</b> 10<br>
+                                    <b> Паркинг:</b> 0<br>
+                                    <b> Картички:</b>  Credit cards <br>
+                                    <b> Домашни миленици:</b> Не<br>
+                                    <b> Пристапно:</b> Да<br>
+                                    <b> Бесплатно Wifi:</b> Да<br>
+                                    <b> Јазици:</b> Англиски<br>
+                                    <b> Музика:</b> Pop, Lounge<br>
+                                    <b> Отворен на:</b> 15.1.2014<br>
+                                    <b> Посети:</b> 14658<br>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <h3><span class="fa fa-check"></span></h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="item" style="padding: 2px;">
+                    <a href="#" class="thumbnail"><img src="img/hotel%20restaurant%20village.jpg" id="osma"/></a>
+                    <h2 style="font-size:26px;">Hotel restaurant Village</h2>
+                    <p>Hotel with 40 modern furnished rooms, a spacious lobby and a Lounge bar, as well as a congress hall, indoor swimming pool, a spa and a fitness center, etc.</p>
+                    <span class="btn btn-info buttons" id="osum" style="margin-top:2px;">More</span>
+
+                    <div id="myModal8" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Hotel restaurant Village</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p> <b> Детали</b><br>
+                                    <b> Адреса:</b> 7ми Ноември, Охрид<br>
+                                    <b> Места за седење (внатре): </b> 150<br>
+                                    <b> Места за седење (надвор):</b> 50<br>
+                                    <b> Паркинг:</b> 50<br>
+                                    <b> Картички:</b>  Credit cards <br>
+                                    <b> Домашни миленици:</b> Не<br>
+                                    <b> Пристапно:</b> Да<br>
+                                    <b> Бесплатно Wifi:</b> Да<br>
+                                    <b> Јазици:</b> Англиски<br>
+                                    <b> Музика:</b> Folk, Pop<br>
+                                    <b> Отворен на:</b> 8.1.2018<br>
+                                    <b> Посети:</b> 2598<br>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <h3><span class="fa fa-check"></span></h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="item" style="padding: 2px;">
+                    <a href="#" class="thumbnail"><img src="img/viaignatia.jpg" id="devetta"/></a>
+                    <h2 style="font-size:26px;">Restaurant ViaIgnatia</h2>
+                    <p>As a result of the long-standing experience and dedication of the staff, "VIA" has become synonymous with many unique specialties that are the perfect blend of traditional Macedonian and international food.</p>
+                    <span class="btn btn-info buttons" id="devet" style="margin-top:-10px;">More</span>
+
+                    <div id="myModal9" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Restaurant ViaIgnatia</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p> <b> Детали</b><br>
+                                    <b> Адреса:</b> Вевчани<br>
+                                    <b> Места за седење (внатре): </b> 80<br>
+                                    <b> Места за седење (надвор):</b> 20<br>
+                                    <b> Паркинг:</b> 30<br>
+                                    <b> Картички:</b>  Credit cards <br>
+                                    <b> Домашни миленици:</b> Не<br>
+                                    <b> Пристапно:</b> Да<br>
+                                    <b> Бесплатно Wifi:</b> Да<br>
+                                    <b> Јазици:</b> Англиски, Албански, Германски<br>
+                                    <b> Музика:</b> Секаков вид<br>
+                                    <b> Отворен на:</b> 10.10.2010<br>
+                                    <b> Посети:</b> 17562<br>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <h3><span class="fa fa-check"></span></h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="item" style="padding: 2px;">
+                    <a href="#" class="thumbnail"><img src="img/mkc.jpg" id="desetta"/></a>
+                    <h2 style="font-size:26px;">MKC Club & restaurant</h2>
+                    <p>Club and Restaurant,tasty food,good music, evening events-concerts of many interesting bands and DJs, great place for breaks, private parties, video projections.</p>
+                    <span class="btn btn-info buttons" id="deset" style="margin-top:10px;">More</span>
+                    <div id="myModal10" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>MKC Club & restaurant</h2>
+                            </div>
+                            <div class="modal-body">
+                                <p> <b> Детали</b><br>
+                                    <b> Адреса:</b> Кеј Димитар Влахов б.б.<br>
+                                    <b> Места за седење (внатре): </b> 120<br>
+                                    <b> Места за седење (надвор):</b> 20<br>
+                                        <b> Паркинг:</b> 40<br>
+                                        <b> Картички:</b>  Credit cards <br>
+                                        <b> Домашни миленици:</b> Не<br>
+                                        <b> Пристапно:</b> Да<br>
+                                        <b> Бесплатно Wifi:</b> Да<br>
+                                        <b> Јазици:</b> Англиски<br>
+                                        <b> Музика:</b> Bosanova, Smooth jazz, Lounge<br>
+                                        <b> Отворен на:</b> 1.1.2010<br>
+                                        <b> Посети:</b> 44687<br>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <h3><span class="fa fa-check"></span></h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        <button class="btn btn-primary leftLst"><</button>
+        <button class="btn btn-primary rightLst">></button>
+        </div>
+    </div>
+    </div>
+</section>
+<section id="map" style="padding-top: 35px;">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Embedded Google Map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2965.2301962393904!2d21.431484000000008!3d41.99533500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smk!4v1421336791668" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <h4 class="h4 text-center"><strong>Republic of Macedonia,</strong></h4>
+            <p class="text-center">1000 Skopje</p>
+            <p class="finkiEmail text-center"><i class="fa fa-envelope-o"></i><a> food&drink@contact.com</a></p>
+            <div class="text-center">
+                <i class="fa fa-facebook" aria-hidden="true" style="font-size:35px;padding:15px; color:rgb(51, 122, 183);"></i>
+                <i class="fa fa-twitter" aria-hidden="true" style="font-size:35px;padding:15px; color:rgb(51, 122, 183);"></i>
+                <i class="fa fa-foursquare" aria-hidden="true" style="font-size:35px;padding:15px; color:rgb(51, 122, 183);"></i>
+                <i class="fa fa-instagram" aria-hidden="true" style="font-size:35px;padding:15px; color:rgb(51, 122, 183);"></i>
+            </div>
+            <hr class="star-primary">
+            <p class="text-center">Copyright Viktorija Petrovska 141076<br>FINKI, 2018</p>
+        </div>
+    </div>
+</footer>
+</body>
+<script>
+    var modals = document.getElementsByClassName('modal');
+    var btns = document.getElementsByClassName("buttons");
+    var spans = document.getElementsByClassName("close");
+    
+    for(let i=0;i<btns.length;i++){
+        btns[i].onclick = function() {
+        modals[i].style.display = "block";
+       }
+    }
+    for(let i=0;i<spans.length;i++){
+        spans[i].onclick = function() {
+        modals[i].style.display = "none";
+        }
+    }
+</script>
+    </html>

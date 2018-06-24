@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reccomendation Site for Lunch/Dinner</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fonts/glyphicons-halflings-regular.svg">
+    <link rel="stylesheet" type="text/css" href="fonts/css/font-awesome.css">
+</head>
+<script>
+
+    function Redirect() {
+        var text;
+        var rest = document.getElementById("myInputs").value;
+
+        switch(rest) {
+            case "Date":
+                window.location = "Date.html";
+                break;
+            case "Social gathering":
+                window.location = "Social.html";
+                break;
+            case "Friends meeting":
+                window.location = "Friends.html";
+                break;
+        }
+        document.getElementById("myInputs").innerHTML = text;
+    }
+</script>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li><a href="RecommendationSite.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="header" class="page-header">
+    <img id="logo" src="img/food_drink.png">
+    <button2 style="border:2px solid grey;" id="message" class="btn btn-info btn-lg"><b>Please make sure all fields are filled out correctly.</b></button2>
+</div>
+
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <form class="well">
+            <div class="form-group">
+                <label> Name</label>
+                <input type="text" class="form-control" id="exampleInputName" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label> Type of meal</label><br>
+                <label>
+                    <select id="myInputs">
+                        <option class="date"> Date</option>
+                        <option class="social"> Social gathering</option>
+                        <option class="friends"> Friends meeting</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-group">
+                <label> How many people to expect?</label>
+                <input type="number" class="form-control" id="exampleInputPeople" placeholder="Enter number of people">
+            </div>
+            <div class="form-group">
+                <label> Time constraint:</label>
+                <input type="time" class="form-control" id="exampleInputTime" placeholder="Enter free time in hours">
+            </div>
+            <button onclick="Redirect()" type="button" value="Redirect me" class="btn btn-info btn-lg btn-block"><span class="glyphicon glyphicon-search"></span> Search </button>
+        </form>
+    </div>
+</div>
+</div>
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <h4 class="h4 text-center"><strong>Republic of Macedonia,</strong></h4>
+            <p class="text-center">1000 Skopje</p>
+            <p class="finkiEmail text-center"><i class="fa fa-envelope-o"></i><a> food&drink@contact.com</a></p>
+            <div class="text-center">
+                <i class="fa fa-facebook" aria-hidden="true" style="font-size:35px;padding:15px; color:rgb(51, 122, 183);"></i>
+                <i class="fa fa-twitter" aria-hidden="true" style="font-size:35px;padding:15px; color:rgb(51, 122, 183);"></i>
+                <i class="fa fa-foursquare" aria-hidden="true" style="font-size:35px;padding:15px; color:rgb(51, 122, 183);"></i>
+                <i class="fa fa-instagram" aria-hidden="true" style="font-size:35px;padding:15px; color:rgb(51, 122, 183);"></i>
+            </div>
+            <hr class="star-primary">
+            <p class="text-center">Copyright Viktorija Petrovska 141076<br>FINKI, 2018</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
